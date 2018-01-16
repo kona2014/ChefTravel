@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <META HTTP-EQUIV="Expires" CONTENT="0">
+  <title>Jung Chef in Romania</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Styles/root.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
+</head>
+<body>
+  <header class="Header">
+    Jung Chef in Romania
+  </header>
+  <nav class="Navigation">
+    <ul>
+      <li class="Selected">
+        <a href="index.html">Menu</a>
+      </li>
+      <li>
+        <a href="">Event</a>
+      </li>
+      <li>
+        <a href="">Board</a>
+      </li>
+    </ul>
+    <a href="submit.html" class="Button">+ Add Menu</a>
+  </nav>
+
+  <div class="List">
+    <div style="width:70%">
+      <div class="List__title">
+        <!-- <p> Din Toată Inima Pentru România </p> -->
+      </div>
+
+      <div class="List_filter">
+        <div class="List_filter_container">
+          <div class="List_filter_categories">
+            <ul class="List_filter_categorylist">
+              <li class="blog-categories__list-item"><a href="#" data-filter-category="null">All</a></li>
+              <li class="blog-categories__list-item"><a href="#" data-filter-category="articles">Articles</a></li>
+              <li class="blog-categories__list-item"><a href="#" data-filter-category="releases">Releases</a></li>
+            </ul>
+          </div>
+          <div class="List_filter_picker">
+            <div class="dropdown">
+              <button class="btn btn--dropdown"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      id="menu-more-dropdown">
+                Filters
+              </button>
+              <ul class="dropdown__list"></ul>
+            </div>
+          </div>
+          <!-- <div class="blog-filters">
+          </div> -->
+        </div>
+      </div>
+
+<!-- list -->
+      <div class="List__contents">
+<?php
+  include 'index_list.php';
+?>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

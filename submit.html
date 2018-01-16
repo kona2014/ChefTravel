@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jung Chef in Romania</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Styles/root.css">
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"  />
+  <script src="Lib\ckeditor\ckeditor.js"></script>
+</head>
+<body>
+  <header class="Header">
+    Jung Chef in Romania
+  </header>
+  <nav class="Navigation">
+    <ul>
+      <li class="Selected">
+        <a href="index.html">Menu</a>
+      </li>
+      <li>
+        <a href="">Event</a>
+      </li>
+      <li>
+        <a href="">Board</a>
+      </li>
+    </ul>
+<!--    <a href="" class="Button">+ Add Menu</a> -->
+  </nav>
+
+  <div class="List">
+    <div style="width:70%">
+      <div class="List__contents">
+        <div class="List__contents__card submit">
+          <h1>Update Menu</h1>
+
+          <form action="update.php" method="post" >
+            <p><label for="id_title">Title*:</label>
+              <input type="text" name="title" maxlength="140" required id="id_title">
+            </p>
+
+            <!-- <p><label for="id_picture">Picture</label>
+              <input type="file" name="picture" id="id_picture">
+            </p> -->
+
+            <p><label for="id_description">Recipe*:</label>
+              <textarea name="description" cols="40" rows="10" required id="id_description">
+              </textarea>
+              <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'id_description' );
+              </script>
+            </p>
+            <input type="submit" value="Update">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

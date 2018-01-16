@@ -1,0 +1,115 @@
+.List{
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  min-height: 80%;
+  flex-direction: column;
+}
+
+.List__title{
+  margin-bottom: 30px;
+}
+
+.List_filter{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.List_filter_container{
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+
+.List_filter_categories{
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) .List_filter_categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.List_filter_categorylist{
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+  padding: 0;
+}
+
+@media (max-width: 767px) .List_filter_picker {
+  float: none;
+  margin: 1rem auto 0;
+}
+.List_filter_picker {
+  float: right;
+}
+
+
+
+.List__contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.List__contents__menu{
+  width: 100%;
+}
+
+.List__contents__menu a {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.List__contents__card{
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+
+.List__contents__column{
+
+}
+
+.List__contents__row{
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.List__contents__row:first-child{
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.List__contents__row:last-child {
+  font-size: 12px;
+}
+
+.List__contents__section{
+  position: relative;
+}
+
+.List__contents__image{
+  width: 100%;
+  max-width: 480px;
+}
+
+/* 등록화면 ------------------------------------------------------------ */
+.List__contents_submit{
+  margin-bottom: 20px;
+}

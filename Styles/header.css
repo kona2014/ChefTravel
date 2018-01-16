@@ -1,0 +1,13 @@
+.Header{
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient( rgba(30, 98, 238, 0.7), rgba(24, 215, 251, 0.7) ), url(../Images/header_main.jpg);
+  background-size: cover;
+  background-position: center top;
+  z-index: 4;
+  position: relative;
+
+  font-size: 50;
+}

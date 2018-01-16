@@ -1,0 +1,31 @@
+.Navigation{
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+  min-height: 75px;
+  box-sizing: border-box;
+
+}
+
+.Navigation ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.Button{
+  text-decoration: none;
+  background-color: #e8183f;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
